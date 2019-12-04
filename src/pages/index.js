@@ -9,9 +9,9 @@ const IndexPage = () => (
     <div style={{ fontWeight: "bold", fontSize: "3rem", lineHeight: "3rem" }}>
       VOLKAN UNSAL
     </div>
-    <p style={{ fontSize: "2rem" }}>Full-stack Developer</p>
+    <p style={{ fontSize: "2rem" }}>Full Stack Developer</p>
     <Nav />
   </Layout>
 )
-  
+
 export default IndexPage
