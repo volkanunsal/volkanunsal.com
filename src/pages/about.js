@@ -10,20 +10,16 @@ const About = () => {
       <Nav showHome />
       <h1>About</h1>
       <p>
-        I am a New York-based software developer with a track record of building
-        great mobile and web software.{" "}
+        I am a US-based software developer with a long track record of building
+        software products and user experiences.
       </p>
       <p>
-        My process brings a deep understanding of product development, lean
-        methodology and human-centered software design techniques to help my
-        clients solve challenging business problems.
+        My product development skills are most helpful to early stage startups
+        that haven't reached product-market fit, but I've also worked with
+        medium-size startups to improve their products and processes.
       </p>
-      <a
-        className="btn btn-default btn-outline-info rounded-0"
-        href="mailto:spocksplanet@gmail.com?subject=re: working together"
-      >
-        Contact Me
-      </a>
+
+      <hr className="hr mt-5 mb-5" />
       <div className="mt-5">
         <h3>Client Testimonials</h3>
         <blockquote className="blockquote border-left pl-2">
@@ -36,6 +32,17 @@ const About = () => {
             <cite title="Source Title">, Founder at SolarList</cite>
           </footer>
         </blockquote>
+      </div>
+      <hr className="hr mt-5 mb-5" />
+
+      <div className="text-center">
+        <a
+          className="btn btn-default btn-outline-info rounded-0"
+          href="mailto:spocksplanet@gmail.com?subject=re: working together"
+          target="__blank"
+        >
+          Contact Me
+        </a>
       </div>
     </Layout>
   )
