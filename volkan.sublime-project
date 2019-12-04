@@ -1,0 +1,31 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+      "folder_exclude_patterns": ["*.cache", "static", "page-data"],
+      "file_exclude_patterns": ["*.webmanifest"]
+		}
+	],
+  "settings":
+  {
+    "auto_complete": true,
+    "flow_bin_path": "/Users/newuser/w/citiesense/lic-local/node_modules/.bin/flow",
+    "js_prettier":
+    {
+      "custom_file_extensions":
+      [
+        "js",
+        "json",
+        "gql",
+        "graphql",
+        "css",
+        "scss",
+        "yml",
+        "flow"
+      ],
+      "debug": false,
+      "prettier_cli_path": "/Users/newuser/w/citiesense/webapp/node_modules/.bin/prettier"
+    }
+  }
+}
