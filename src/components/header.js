@@ -1,19 +1,32 @@
 import React from "react"
+import { globalHistory as history } from "@reach/router"
+import { Link } from "gatsby"
 
-const Header = () => (
-  <header
-    style={{
-      marginBottom: "4.45rem",
-    }}
-  >
-    <div
+const Header = () => {
+  const { location } = history
+  const isHome = location.pathname === "/"
+
+  return (
+    <header
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        marginBottom: "4.45rem",
       }}
-    />
-  </header>
-)
+    >
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `1.45rem 1.0875rem`,
+        }}
+      >
+        {!isHome && (
+          <h4>
+            <Link to="/">VOLKAN UNSAL</Link>
+          </h4>
+        )}
+      </div>
+    </header>
+  )
+}
 
 export default Header
