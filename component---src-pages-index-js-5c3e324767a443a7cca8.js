@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{RXBc:function(e,t,n){"use strict";n.r(t);var l=n("q1tI"),a=n.n(l),r=n("Bl7J"),c=n("vrFN"),i=n("QSOs");t.default=function(){return a.a.createElement(r.a,null,a.a.createElement(c.a,{title:"Home"}),a.a.createElement("div",{style:{fontWeight:"bold",fontSize:"3rem",lineHeight:"3rem"}},"VOLKAN UNSAL"),a.a.createElement("p",{style:{fontSize:"2rem"}},"Full Stack Developer"),a.a.createElement(i.a,null))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-5c3e324767a443a7cca8.js.map
