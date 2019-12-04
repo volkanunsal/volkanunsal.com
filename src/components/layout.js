@@ -7,7 +7,7 @@
 
 import React, { Fragment } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
+import "./layout.css"
 import Header from "./header"
 
 const Layout = ({ children }) => {
