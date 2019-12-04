@@ -15,7 +15,7 @@ const About = () => {
       </p>
       <p>
         My product development skills are most helpful to early stage startups
-        that haven't reached product-market fit, but I've also worked with
+        that haven't reached product-market fit stage, but I've also worked with
         medium-size startups to improve their products and processes.
       </p>
 
