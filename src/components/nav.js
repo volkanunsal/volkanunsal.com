@@ -14,12 +14,16 @@ export default ({ showHome }) => {
         <Link className="mr-3" to="/about">
           About
         </Link>
-        <Link className="mr-3" to="/blog">
-          Blog
-        </Link>
-        <Link className="mr-3" to="/resumee">
-          Resumee
-        </Link>
+        {false && (
+          <Link className="mr-3" to="/blog">
+            Blog
+          </Link>
+        )}
+        {false && (
+          <Link className="mr-3" to="/resumee">
+            Resumee
+          </Link>
+        )}
       </div>
       <div className="d-flex align-self-end">
         <a

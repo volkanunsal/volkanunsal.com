@@ -19,6 +19,12 @@ const About = () => {
         methodology and human-centered software design techniques to help my
         clients solve challenging business problems.
       </p>
+      <a
+        className="btn btn-default btn-outline-info rounded-0"
+        href="mailto:spocksplanet@gmail.com?subject=re: working together"
+      >
+        Contact Me
+      </a>
       <div className="mt-5">
         <h3>Client Testimonials</h3>
         <blockquote className="blockquote border-left pl-2">
