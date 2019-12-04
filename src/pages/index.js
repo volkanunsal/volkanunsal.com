@@ -1,7 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Nav from "../components/nav"
 
 const IndexPage = () => (
   <Layout>
@@ -10,23 +10,8 @@ const IndexPage = () => (
       VOLKAN UNSAL
     </div>
     <p style={{ fontSize: "2rem" }}>Full-stack Developer</p>
-
-    <div className="d-flex">
-      <Link className="mr-3" to="/blog">
-        Blog
-      </Link>
-      <Link className="mr-3" to="/resumee">
-        Resumee
-      </Link>
-      <a
-        className="mr-3"
-        href="https://github.com/volkanunsal"
-        target="__blank"
-      >
-        Github
-      </a>
-    </div>
+    <Nav />
   </Layout>
 )
-
+  
 export default IndexPage

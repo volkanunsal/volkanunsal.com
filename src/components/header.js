@@ -1,10 +1,10 @@
 import React from "react"
-import { globalHistory as history } from "@reach/router"
-import { Link } from "gatsby"
+// import { globalHistory as history } from "@reach/router"
+// import { Link } from "gatsby"
 
 const Header = () => {
-  const { location } = history
-  const isHome = location.pathname === "/"
+  // const { location } = history
+  // const isHome = location.pathname === "/"
 
   return (
     <header
@@ -18,13 +18,7 @@ const Header = () => {
           maxWidth: 960,
           padding: `1.45rem 1.0875rem`,
         }}
-      >
-        {!isHome && (
-          <h4>
-            <Link to="/">VOLKAN UNSAL</Link>
-          </h4>
-        )}
-      </div>
+      />
     </header>
   )
 }
