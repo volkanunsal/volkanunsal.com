@@ -1,7 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
+import cx from "classnames"
+import { globalHistory as history } from "@reach/router"
 
 export default ({ showHome }) => {
+  const isPage = v => history.location.pathname === v
   return (
     <div className="d-flex mb-4">
       <div className="d-flex">
@@ -11,16 +14,25 @@ export default ({ showHome }) => {
           </Link>
         )}
 
-        <Link className="mr-3" to="/about">
+        <Link
+          className={cx("mr-3", { "text-dark": isPage("/about") })}
+          to="/about"
+        >
           About
         </Link>
         {false && (
-          <Link className="mr-3" to="/blog">
+          <Link
+            className={cx("mr-3", { "text-dark": isPage("/blog") })}
+            to="/blog"
+          >
             Blog
           </Link>
         )}
         {false && (
-          <Link className="mr-3" to="/resumee">
+          <Link
+            className={cx("mr-3", { "text-dark": isPage("/resumee") })}
+            to="/resumee"
+          >
             Resumee
           </Link>
         )}
