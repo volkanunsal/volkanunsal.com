@@ -6,7 +6,7 @@ export default ({ showHome }) => {
     <div className="d-flex mb-4">
       <div className="d-flex">
         {showHome && (
-          <Link to="/" className="mr-3 border-right pr-3">
+          <Link to="/" className="mr-3">
             <i className="fa fa-caret-left" /> Home
           </Link>
         )}
@@ -25,7 +25,7 @@ export default ({ showHome }) => {
           </Link>
         )}
       </div>
-      <div className="d-flex align-self-end">
+      <div className="d-flex  border-left pl-3">
         <a
           className="mr-3"
           href="https://github.com/volkanunsal"
