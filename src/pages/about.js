@@ -33,17 +33,6 @@ const About = () => {
           </footer>
         </blockquote>
       </div>
-      <hr className="hr mt-5 mb-5" />
-
-      <div className="text-center">
-        <a
-          className="btn btn-default btn-outline-info rounded-0"
-          href="mailto:spocksplanet@gmail.com?subject=re: working together"
-          target="__blank"
-        >
-          Contact Me
-        </a>
-      </div>
     </Layout>
   )
 }

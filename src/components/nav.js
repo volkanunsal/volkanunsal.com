@@ -40,6 +40,9 @@ export default ({ showHome }) => {
         >
           LinkedIn
         </a>
+        <a href="mailto:spocksplanet@gmail.com?subject=hello" target="__blank">
+          Contact
+        </a>
       </div>
     </div>
   )
