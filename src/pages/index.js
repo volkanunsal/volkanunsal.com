@@ -2,9 +2,12 @@ import React, { useEffect } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Nav from "../components/nav"
+// import art from "../lib/art"
 
 const IndexPage = () => {
-  useEffect(() => {}, [])
+  useEffect(() => {
+    // art(".art-container")
+  }, [])
   return (
     <Layout>
       <SEO title="Home" />
@@ -13,7 +16,7 @@ const IndexPage = () => {
       </div>
       <p style={{ fontSize: "2rem" }}>Full Stack Developer</p>
       <Nav />
-      <div className="art" />
+      <div className="art-container" />
     </Layout>
   )
 }
