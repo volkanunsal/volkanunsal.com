@@ -6,18 +6,24 @@ import Nav from "../components/nav"
 
 const IndexPage = () => {
   useEffect(() => {
-    // art(".art-container")
+    // setTimeout(() => {
+    //   art()
+    // }, 100)
   }, [])
   return (
-    <Layout>
-      <SEO title="Home" />
-      <div style={{ fontWeight: "bold", fontSize: "3rem", lineHeight: "3rem" }}>
-        VOLKAN UNSAL
-      </div>
-      <p style={{ fontSize: "2rem" }}>Full Stack Developer</p>
-      <Nav />
+    <>
+      <Layout>
+        <SEO title="Home" />
+        <div
+          style={{ fontWeight: "bold", fontSize: "3rem", lineHeight: "3rem" }}
+        >
+          VOLKAN UNSAL
+        </div>
+        <p style={{ fontSize: "2rem" }}>Full Stack Developer</p>
+        <Nav />
+      </Layout>
       <div className="art-container" />
-    </Layout>
+    </>
   )
 }
 
