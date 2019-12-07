@@ -1,25 +1,21 @@
 import * as d3 from "d3"
-console.log(d3)
 
 export default (container = "body") => {
   var width = 960
   var height = 500
-  var nodes = d3.range(200).map(function() {
-    return { radius: Math.random() * 12 + 4 }
-  })
+  var nodes = d3.range(200).map(() => ({ radius: Math.random() * 12 + 4 }))
   var root = nodes[0]
   var color = d3.schemeCategory10
   root.radius = 0
   root.fixed = true
 
-  var force = d3.layout
-    .force()
-    .gravity(0.05)
-    .charge((d, i) => (i ? 0 : -2000))
-    .nodes(nodes)
-    .size([width, height])
+  var force = d3
+    .forceSimulation(nodes)
+    .force("charge", (d, i) => (i ? 0 : -2000))
+    .force("center", d3.forceCenter())
 
-  force.start()
+  // .gravity(0.05)
+  // .size([width, height])
 
   var svg = d3
     .select(container)
@@ -36,7 +32,7 @@ export default (container = "body") => {
     .style("fill", (d, i) => color[i % 3])
 
   force.on("tick", e => {
-    var q = d3.geom.quadtree(nodes),
+    var q = d3.quadtree().addAll(nodes),
       i = 0,
       n = nodes.length
 
@@ -48,11 +44,11 @@ export default (container = "body") => {
       .attr("cy", d => d.y)
   })
 
-  svg.on("mousemove", () => {
+  svg.on("mousemove", function() {
     var p1 = d3.mouse(this)
     root.px = p1[0]
     root.py = p1[1]
-    force.resume()
+    force.restart()
   })
 
   function collide(node) {
