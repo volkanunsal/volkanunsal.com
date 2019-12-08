@@ -4,7 +4,7 @@ import { compose } from "ramda"
 const n = 512
 const pxScale = d3.scaleLinear([0, n - 1], [0, 1]).clamp(true)
 const color = compose(
-  d3.interpolatePRGn,
+  d3.interpolateRainbow,
   pxScale
 )
 
@@ -23,7 +23,7 @@ function ramp() {
   const ctx = canvas.getContext("2d")
   canvas.style.margin = "0 -14px"
   canvas.style.width = "calc(100% + 28px)"
-  canvas.style.height = "10px"
+  canvas.style.height = "3px"
   canvas.style.imageRendering = "pixelated"
 
   render(ctx)

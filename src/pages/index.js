@@ -22,7 +22,7 @@ const IndexPage = () => {
         <p style={{ fontSize: "2rem" }}>Full Stack Developer</p>
         <Nav />
       </Layout>
-      <div className="art-container" style={{ marginTop: "-2rem" }} />
+      <div className="art-container" style={{ marginTop: "-3rem" }} />
     </>
   )
 }
