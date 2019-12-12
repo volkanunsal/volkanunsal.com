@@ -6,9 +6,7 @@ import art from "../lib/art"
 
 const IndexPage = () => {
   useEffect(() => {
-    setTimeout(() => {
-      art()
-    }, 0)
+    art()
   }, [])
   return (
     <>
