@@ -28,14 +28,6 @@ export default ({ showHome }) => {
             Blog
           </Link>
         )}
-        {false && (
-          <Link
-            className={cx("mr-3", { "text-dark": isPage("/resumee") })}
-            to="/resumee"
-          >
-            Resumee
-          </Link>
-        )}
       </div>
       <div className="d-flex  border-left pl-3">
         <a
