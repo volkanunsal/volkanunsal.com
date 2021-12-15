@@ -1,31 +1,13 @@
-import React from "react"
 import { Link } from "gatsby"
-import cx from "classnames"
-import { globalHistory as history } from "@reach/router"
+import React from "react"
 
 export default ({ showHome }) => {
-  const isPage = v => history.location.pathname === v
   return (
     <div className="d-flex mb-4">
       <div className="d-flex">
         {showHome && (
           <Link to="/" className="mr-3">
             <i className="fa fa-caret-left" /> Home
-          </Link>
-        )}
-
-        <Link
-          className={cx("mr-3", { "text-dark": isPage("/about") })}
-          to="/about"
-        >
-          About
-        </Link>
-        {false && (
-          <Link
-            className={cx("mr-3", { "text-dark": isPage("/blog") })}
-            to="/blog"
-          >
-            Blog
           </Link>
         )}
       </div>
